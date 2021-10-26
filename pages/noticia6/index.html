@@ -1,78 +1,835 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<title>ColorMag | Single</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="../../assets/css/font.css">
-<link rel="stylesheet" href="../../assets/css/animate.css">
-<link rel="stylesheet" href="../../assets/css/structure.css">
-<!--[if lt IE 9]>
+ <head>
+  <title>
+   ColorMag | Single
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/font.css" rel="stylesheet"/>
+  <link href="../../assets/css/animate.css" rel="stylesheet"/>
+  <link href="../../assets/css/structure.css" rel="stylesheet"/>
+  <!--[if lt IE 9]>
 <script src="../../assets/js/html5shiv.min.js"></script>
 <script src="../../assets/js/respond.min.js"></script>
 <![endif]-->
-</head>
-<body>
-<div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
-<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<header id="header">
-  <div class="container">
+ </head>
+ <body>
+  <div id="preloader">
+   <div id="status">
+   </div>
+  </div>
+  <a class="scrollToTop" href="#">
+   <i class="fa fa-angle-up">
+   </i>
+  </a>
+  <header id="header">
+   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="../../index.html"><span>Color</span>Mag</a> </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav custom_nav">
-            <li class=""><a href="../../index.html">Home</a></li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jobs</a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Jobs Home</a> </li>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Article</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features</a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Standard Blog Layout</a></li>
-                <li><a href="#">Post With Comments</a></li>
-                <li><a href="#">Page:Right Sidebar</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Shortcodes</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Download Template</a></li>
-          </ul>
-        </div>
+     <div class="container-fluid">
+      <div class="navbar-header">
+       <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+        <span class="sr-only">
+         Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+       </button>
+       <a class="navbar-brand" href="../../index.html">
+        <span>
+         Color
+        </span>
+        Mag
+       </a>
       </div>
+      <div class="navbar-collapse collapse" id="navbar">
+       <ul class="nav navbar-nav custom_nav">
+        <li class="">
+         <a href="../../index.html">
+          Home
+         </a>
+        </li>
+        <li class="dropdown">
+         <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+          Jobs
+         </a>
+         <ul class="dropdown-menu" role="menu">
+          <li class="dropdown">
+           <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            Jobs Home
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Faq
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Home
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Article
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dropdown">
+         <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+          Features
+         </a>
+         <ul class="dropdown-menu" role="menu">
+          <li>
+           <a href="#">
+            Standard Blog Layout
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Post With Comments
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Page:Right Sidebar
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          Shortcodes
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Archive
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Contact
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Download Template
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
     </nav>
     <form id="searchForm">
-      <input type="text" placeholder="Search...">
-      <input type="submit" value="">
+     <input placeholder="Search..." type="text"/>
+     <input type="submit" value=""/>
     </form>
-  </div>
-</header>
-<section id="contentbody">
-  <div class="container">
+   </div>
+  </header>
+  <section id="contentbody">
+   <div class="container">
     <div class="row">
-      <div class=" col-sm-12 col-md-6 col-lg-6">
-        <div class="row">
-          <div class="leftbar_content">
-            <h2>The New Stuff</h2>
-            <div class="singlepost_area">
-              <div class="singlepost_content"> <a href="#" class="stuff_category">Technology</a> <span class="stuff_date">Nov <strong>17</strong></span>
-                <h2><a href="#" id="titulo">Duis quis erat non nunc fringilla</a></h2>
-                <img class="img-center" src="../../images/img_6.jpg" alt="">
-                <p id="noticia">Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. Vestibulum sodales ante a purus volutpat euismod. Proin sodales quam nec ante sollicitudin lacinia. Ut egestas bibendum tempor. Morbi non nibh sit amet ligula blandit ullamcorper in nec risus. Pellentesque fringilla diam faucibus tortor bibendum vulputate. Etiam turpis urna, rhoncus et mattis ut, dapibus eu nunc. Nunc sed aliquet nisi. Nullam ut magna non lacus adipiscing volutpat. Aenean odio mauris, consectetur quis consequat quis, blandit a nunc. Sed orci erat, placerat ac interdum ut, suscipit eu augue. Nunc vitae mi tortor. Ut vel justo quis lectus elementum </p>
-                <blockquote>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.</blockquote>
-                <!-- <ul>
+     <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="row">
+       <div class="leftbar_content">
+        <h2>
+         The New Stuff
+        </h2>
+        <div class="singlepost_area">
+         <div class="singlepost_content">
+          <a class="stuff_category" href="#">
+           ECONOMIA
+          </a>
+          <span class="stuff_date">
+           Nov
+           <strong>
+            17
+           </strong>
+          </span>
+          <h2>
+           <a href="#" id="titulo">
+            'Apps' de delivery: ¿Cuánto ha cambiado este mercado durante la pandemia?
+           </a>
+          </h2>
+          <img alt="" class="img-center" src="../../images/img_6.jpg"/>
+          <p id="noticia">
+           <section>
+            <div class="story-content__stamp-trust">
+             <div class="story-content__stamp-trust__box-left">
+              <p>
+               Conforme a los criterios de
+              </p>
+              <a href="https://elcomercio.pe/buenas-practicas/#trust-project" rel="noreferrer" target="_blank">
+               <img alt="Trust Project" class="lazy" data-src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/banner-trust-project/logo-trust.png" height="26" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2" width="100%"/>
+              </a>
+             </div>
+             <a class="story-content__stamp-trust__link" href="https://elcomercio.pe/buenas-practicas/" rel="noreferrer" target="_blank">
+              Saber más
+             </a>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              El mercado de
+             </b>
+             <a href="https://elcomercio.pe/noticias/apps-de-delivery/" itemprop="url" target="_blank">
+              <b>
+               aplicativos de delivery
+              </b>
+             </a>
+             <b>
+              no volverá a ser el mismo que conocíamos antes de la pandemia. La crisis sanitaria no solo impulsó un mayor uso de estos servicios desde el confinamiento, también empujó a que
+             </b>
+             <a href="https://elcomercio.pe/noticias/uber-eats/" itemprop="url" target="_blank">
+              <b>
+               Uber Eats, el otrora tercer jugador del mercado, decidiera retirarse del país
+              </b>
+             </a>
+             <b>
+              definitivamente en junio del año pasado, ahogado por la coyuntura y la competencia.
+             </b>
+            </p>
+            <div class="content_gpt_caja3">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/economia/caja3" data-bloque="3" data-prebid-enabled="true" id="gpt_caja3">
+             </div>
+            </div>
+            <div id="spc_post_stories">
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El crecimiento desde entonces, como muestra Euromonitor International, ha sido exponencial. Solo para el caso de el
+             <b>
+              delivery
+             </b>
+             de restaurantes [tradicional y por ‘apps’], la expansión fue de 350% en el 2020, pasando de representar el 4% de las ventas de estos negocios en el 2019 al 25% del total.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <b>
+              LEE TAMBIÉN:
+             </b>
+             <a href="https://elcomercio.pe/economia/dia-1/aerolineas-y-vuelos-vuelve-avianca-y-llega-jetsmart-al-peru-la-guerra-que-se-viene-en-el-mercado-aerocomercial-informe-latam-airlines-avianca-viva-air-sky-airline-jetsmart-star-peru-industria-aerea-pasajes-ranking-noticia/" target="_blank">
+              <i>
+               Vuelve Avianca y llega Jetsmart al Perú: se viene una nueva guerra aerocomercial
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Aunque el
+             <b>
+              delivery
+             </b>
+             de restaurantes es el más solicitado, siendo el 83% de los pedidos en el caso de
+             <a href="https://elcomercio.pe/noticias/rappi/" itemprop="url" target="_blank">
+              Rappi
+             </a>
+             , también se han disparado en más de 200% los de supermercados y tiendas exprés, así como los de ‘e-commerce’ y ‘courier’, en lo que va del año.
+             <b>
+             </b>
+             [Ver infografía]
+            </p>
+            <div class="content_gpt_inline">
+             <div data-ads-dimensions="[[1,1]]" data-ads-dimensions-m="[[1,1]]" data-ads-name="/28253241/elcomercio/web/post/economia/inline" data-bloque="3" id="gpt_inline">
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <i>
+              “Sin duda, la pandemia impulsó el crecimiento del rubro y ha transformado los hábitos de los usuarios. Ahora el
+             </i>
+             <i>
+              <b>
+               delivery
+              </b>
+             </i>
+             <i>
+              no es un servicio adicional, ahora es parte de la dinámica familiar
+             </i>
+             ”, sostiene Alessio Aveggio, director de Operaciones de
+             <a href="https://elcomercio.pe/noticias/pedidosya/" itemprop="url" target="_blank">
+              PedidosYa Perú
+             </a>
+             .
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Si vemos solo el mes de
+             <mark class="hl_yellow">
+              abril de este año, se realizaron 2.6 millones de
+              <b>
+               pedidos
+              </b>
+              a través de estos aplicativos en el país,
+             </mark>
+             de un total de 4.600 establecimientos comerciales. Ese mismo mes, se contabilizaron 13 mil socios repartidores en estas plataformas, de acuerdo a un estudio –compartido en exclusiva a Día1– del Instituto Peruano de Economía (IPE), por encargo de
+             <a href="https://elcomercio.pe/noticias/comex-peru/" itemprop="url" target="_blank">
+              Comex Perú
+             </a>
+             .
+            </p>
+            <div class="content_gpt_caja4">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/economia/caja4" data-bloque="3" data-prebid-enabled="true" id="gpt_caja4">
+             </div>
+            </div>
+            <figure>
+             <div data-fusion-component="image:620x0::NJT654HYV5ETNE5KGW435DK2AM.jpg" id="fusion-static-enter:image:620x0::NJT654HYV5ETNE5KGW435DK2AM.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/U6dMoYfnKhDn2riY1Rf57KXdmW8=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NJT654HYV5ETNE5KGW435DK2AM.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/w8dIUYvPTAiMxRcb7i8oJUsu9xI=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NJT654HYV5ETNE5KGW435DK2AM.jpg" media="(max-width: 639px)"/>
+              <img alt="Infografía: Luis Huaitan." class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/amU4eQpF3GU_sBAgzbx_5igvc1M=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/NJT654HYV5ETNE5KGW435DK2AM.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::NJT654HYV5ETNE5KGW435DK2AM.jpg" id="fusion-static-exit:image:620x0::NJT654HYV5ETNE5KGW435DK2AM.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Infografía: Luis Huaitan.
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             De otro lado, la cantidad de usuarios de estos aplicativos se duplicó frente a sus números prepandemia: en enero del año pasado no llegaban a 300 mil y, más de un año después, en abril ya eran 580 mil.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El gremio, donde está el comité
+             <b>
+              ComexDigital
+             </b>
+             , que agrupa a las plataformas digitales, precisa que aunque las
+             <a href="https://elcomercio.pe/noticias/apps-de-delivery/" itemprop="url" target="_blank">
+              ‘apps’ de delivery
+             </a>
+             se están expandiendo poco a poco en el interior del país, hasta el 2020 el 87% de sus pedidos se concentraron en la capital.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             En base a este reporte, además, se ha podido estimar que el impacto directo e indirecto de las plataformas digitales (de movilidad y de reparto) en la economía del país equivale al
+             <b>
+             </b>
+             0,25% del
+             <b>
+              PBI
+             </b>
+             , comenta Jaime Dupuy, gerente de Asuntos Legales y Regulatorios de ComexPerú.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <i>
+              <b>
+               Mira:
+              </b>
+             </i>
+             <a href="https://elcomercio.pe/economia/peru/empleo-formal-crecio-09-en-agosto-por-primera-vez-en-la-pandemia-afirma-el-bcr-nndc-noticia/">
+              <i>
+               <u>
+                <b>
+                 Empleo formal creció 0,9% en agosto por primera vez en la pandemia, afirma el BCR
+                </b>
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <h2 class="">
+             COMPETENCIA Y FÓRMULAS
+            </h2>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Tras la salida de
+             <b>
+              Uber Eats
+             </b>
+             , la competencia no hizo más que avivarse. Este adiós fue capitalizado rápidamente por
+             <b>
+              Rappi
+             </b>
+             y
+             <b>
+              Glovo
+             </b>
+             , compañía que a los pocos meses migró a
+             <b>
+              PedidosYa
+             </b>
+             (cuando a nivel global pasó a manos de Delivery Hero). Y fueron apareciendo cada vez nuevas propuestas en el mercado.
+            </p>
+            <div class="content_gpt_caja5">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/economia/caja5" data-bloque="4" data-prebid-enabled="true" id="gpt_caja5">
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El proceso de migración hacia
+             <b>
+              PedidosYa
+             </b>
+             no estuvo exento de dificultades, por lo cual les tomó tres meses recuperar a todos los usuarios que eran de
+             <b>
+              Glovo
+             </b>
+             , cuenta Aveggio. Hoy, asegura, ya superaron esa cifra y están creciendo.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::4AH34C47AZGDRH2FOQVMUDBU3M.jpg" id="fusion-static-enter:image:620x0::4AH34C47AZGDRH2FOQVMUDBU3M.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/WqBrk2z5_KRM08qJm-yINNrAtyM=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4AH34C47AZGDRH2FOQVMUDBU3M.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/M-CORzyxEktEL_3MqkAXg3Ar-K0=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4AH34C47AZGDRH2FOQVMUDBU3M.jpg" media="(max-width: 639px)"/>
+              <img alt="Infografía: Luis Huaitan." class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/Lq8zxYT9z5Rr32H0A_ieR4gQoL8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/4AH34C47AZGDRH2FOQVMUDBU3M.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::4AH34C47AZGDRH2FOQVMUDBU3M.jpg" id="fusion-static-exit:image:620x0::4AH34C47AZGDRH2FOQVMUDBU3M.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Infografía: Luis Huaitan.
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             La más beneficiada con todos estos cambios habría sido
+             <b>
+              Rappi.
+             </b>
+             “
+             <i>
+              Tuvimos buenos resultados posteriores a la
+             </i>
+             <a href="https://elcomercio.pe/economia/dia-1/rappi-iniciamos-la-pandemia-compartiendo-el-liderazgo-un-ano-y-medio-despues-somos-primeros-entrevista-salida-de-uber-eats-pedidosya-glovo-vacunas-covid-19-coronavirus-70-de-repartidores-es-de-nacionalidad-venezolana-y-el-30-son-peruanos-noticia/" itemprop="url" target="_blank">
+              <i>
+               salida de
+              </i>
+              <i>
+               <b>
+                Uber Eats
+               </b>
+              </i>
+             </a>
+             <i>
+              y, luego,
+             </i>
+             <a href="https://elcomercio.pe/economia/dia-1/glovo-ahora-sera-pedidosya-que-cambiara-para-los-usuarios-y-para-su-estrategia-en-peru-entrevista-app-delivery-comercios-repartidores-noticia/" itemprop="url" target="_blank">
+              <i>
+               con la migración de Glovo a PedidosYa
+              </i>
+             </a>
+             ”, comentó José Ignacio Bernal, general manager de
+             <b>
+              Rappi
+             </b>
+             para Perú y Ecuador, en una entrevista anterior con este suplemento. Agrega que ya van un año liderando con el 70% del ‘market share’.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Pero el mercado de aplicativos de
+             <b>
+              delivery
+             </b>
+             es muy dinámico y están surgiendo nuevas empresas para cubrir cada vez más variedad de servicios, acorde a las nuevas necesidades de los usuarios. A la fecha, ya serían al menos ocho los jugadores que se encuentran ya en esta carrera.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <a href="https://elcomercio.pe/noticias/cornershop/" itemprop="url" target="_blank">
+              Cornershop by Uber
+             </a>
+             ,
+             <b>
+              Fazil
+             </b>
+             (del grupo Falabella) especializados en entregas de productos de supermercados;
+             <b>
+              Jokr
+             </b>
+             o
+             <b>
+              Yummy Rocket
+             </b>
+             en el
+             <b>
+              delivery
+             </b>
+             ultra rápido con promesas de entrega de productos diversos en menos de 15 minutos, se suman a la oferta de ‘apps’ ya enfocadas en última milla, entrega de paquetes o ‘apps’ de
+             <b>
+              delivery
+             </b>
+             para restaurantes.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <i>
+              <b>
+               Mira:
+              </b>
+             </i>
+             <a href="https://elcomercio.pe/economia/promperu-economista-aida-salas-gamarra-es-la-nueva-gerente-general-de-la-entidad-nndc-noticia/">
+              <i>
+               <u>
+                <b>
+                 Promperú: economista Aida Salas Gamarra es la nueva gerente general de la entidad
+                </b>
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             “
+             <i>
+              Las empresas están buscando diferenciarse y la especialización por servicio termina siendo consecuencia de ella
+             </i>
+             ”, refiere Rolando Arellano, gerente general de
+             <b>
+              Arellano Consultoría
+             </b>
+             .
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Desde
+             <b>
+              Jokr
+             </b>
+             indican que apostaron por el país porque el consumidor limeño busca una oferta de mayor inmediatez. Con 150 mil usuarios registrados y más de 200 repartidores asociados, apunta a consolidar su oferta no solo con productos de primera necesidad sino con tecnología, entre otras categorías. Y ampliar su cobertura dentro de Lima en el 2022.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::PGWOPAISWNER7GVKITEHVWJIGA.jpg" id="fusion-static-enter:image:620x0::PGWOPAISWNER7GVKITEHVWJIGA.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/Z7R6zmXYAd6Qv83m-0tyjAb0lC8=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PGWOPAISWNER7GVKITEHVWJIGA.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/azBBtrS3G3C4aqMHYardJqWIlkc=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PGWOPAISWNER7GVKITEHVWJIGA.jpg" media="(max-width: 639px)"/>
+              <img alt="Infografía: Luis Huaitan." class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/LjzUZf1WWnCWyCRNUysevkwByl4=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PGWOPAISWNER7GVKITEHVWJIGA.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::PGWOPAISWNER7GVKITEHVWJIGA.jpg" id="fusion-static-exit:image:620x0::PGWOPAISWNER7GVKITEHVWJIGA.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Infografía: Luis Huaitan.
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              Yummy Rocket
+             </b>
+             , con apenas tres semanas de operaciones en el Perú, ya realiza 300 órdenes diarias con entregas de productos básicos en un máximo de 15 minutos. Este año proyectan abrir 10 ‘dark stores’ y para el 2022 completar su cobertura en la capital para luego ir a las regiones.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Marinus Van Gestel, director de
+             <b>
+              Cornershop
+             </b>
+             para Latinoamérica, comenta que también se suman a la tendencia del ‘quick commerce’ con
+             <b>
+              Cornershop Express
+             </b>
+             , para entregas de 35 minutos con los formatos de conveniencia exprés Spid de Cencosud y Tambo. Al mismo tiempo que suman nuevas tiendas a la oferta regular del aplicativo. Hoy tienen más de 200 tiendas asociadas para cubrir sus entregas.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <i>
+              <b>
+               Mira:
+              </b>
+             </i>
+             <a href="https://elcomercio.pe/economia/cyber-wow-cinco-consejos-para-aprovechar-las-ofertas-online-y-realizar-compras-inteligentes-nndc-noticia/">
+              <i>
+               <u>
+                <b>
+                 Cyber Wow: Cinco consejos para aprovechar las ofertas online y realizar compras inteligentes
+                </b>
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              Fazil
+             </b>
+             , por su parte, busca ampliar su mix de tiendas. Más allá de Hipermercado Tottus, Falabella y Sodimac, incluyen farmacias, tiendas de regalos y especializadas de alimentos, y anuncian el ingreso de marcas locales de emprendedores y agricultores. Hace pocas semanas ficharon a Gianluca Lapadula como su imagen y su aporte ha sido enorme, aseguran.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              PedidosYa
+             </b>
+             y
+             <b>
+              Rappi
+             </b>
+             no se quieren quedar atrás. La primera está reforzando su servicio de
+             <b>
+              PedidosYa Market
+             </b>
+             con la ampliación de sus ‘
+             <b>
+              dark stores’:
+             </b>
+             proyecta 100 en el 2022. Y la segunda, entró fuerte con
+             <b>
+              Turbo Fresh
+             </b>
+             para entrega de menos de 10 minutos. Apunta a 40 tiendas e ingresar a un par de ciudades más este año.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" id="fusion-static-enter:image:620x0::TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/IhHabzWjrnPI3jrfFti7ZyxUbyU=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/luWL8BY9OaZ9L4QivRNpYdlPFNI=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" media="(max-width: 639px)"/>
+              <img alt="Dark store Jokr" class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/KMhFD3LONpVcj1ijbuqw86FGBO0=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" id="fusion-static-exit:image:620x0::TS4JLVX2D5COJC4TLRDPM3NC4Q.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Dark store Jokr
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Asimismo,
+             <b>
+              Rappi
+             </b>
+             , que se autodefine como una ‘super app’, mira nuevas verticales. Luego de
+             <b>
+              Turbo Fresh
+             </b>
+             , ha lanzado
+             <b>
+              Rappi Travel
+             </b>
+             , para comprar paquetes turísticos o pasajes, con beneficios asociados a su producto financiero
+             <b>
+              Rappibank.
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Al respecto, Arellano agrega que el otro camino que siguen algunas ‘apps’ más grandes: convertirse en un ‘hub’ comercializador.
+            </p>
+            <h2 class="">
+             <b>
+              REGULACIONES PENDIENTES
+             </b>
+            </h2>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Pero este crecimiento plantea desafíos en cuanto a las condiciones laborales y tributarias del modelo de negocio de estos aplicativos. Los repartidores de
+             <b>
+              delivery
+             </b>
+             forman parte de esta economía colaborativa, no reciben un salario fijo sino ingresos por pedido completado, lo que les da mayor flexibilidad para usarlo cuando lo requieran o trabajar en más de uno.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <i>
+              <b>
+               Mira:
+              </b>
+             </i>
+             <a href="https://elcomercio.pe/economia/negocios/whatsapp-estas-son-las-recomendaciones-para-impulsar-las-ventas-de-los-negocios-marketing-digital-comercio-electronico-nndc-noticia/">
+              <i>
+               <u>
+                <b>
+                 WhatsApp: Estas son las recomendaciones para impulsar las ventas de los negocios
+                </b>
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             No obstante, existen estudios y entidades –como la Organización Internacional del Trabajo (OIT) –que han apuntado ciertos riesgos para las condiciones de trabajo de los repartidores o conductores, ya que no disponen de ahorros previsionales, cobertura de salud, entre otros beneficios laborales.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Desde
+             <b>
+              ComexPerú
+             </b>
+             , el gremio que agrupa a las plataformas, remarcan que no hay una relación laboral y que pensar en incluirlos en una planilla les restará independencia y cambiará el negocio.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             “
+             <i>
+              El problema no es de ingresos económicos. Cuando se conformó la mesa de trabajo del
+             </i>
+             <a href="https://elcomercio.pe/noticias/mtpe/" itemprop="url" target="_blank">
+              <i>
+               Ministerio de Trabajo (MTPE)
+              </i>
+             </a>
+             <i>
+              hace unos años, se evaluó que el problema era de seguridad social y no solo en las plataformas, sino en los trabajos independientes, que son los que crecen
+             </i>
+             ”, explica Dupuy. Desde su óptica, no es necesaria una regulación para las plataformas, pero sí revisar el problema.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" id="fusion-static-enter:image:620x0::PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/Pq4A9HU4-cWkHsgwkezC1rE6TNA=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/LhAXebt2jgEp-om5YBzg1PHOj7k=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" media="(max-width: 639px)"/>
+              <img alt="" class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/uhKFbBX50vdR8-4phe1gbsq1oxI=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" id="fusion-static-exit:image:620x0::PPDBS4ZDZREE3JFCEKKKLKCY6U.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <mark class="hl_yellow">
+              De acuerdo a los datos recogidos, los repartidores logran ingresos aproximados por S/1467 cuando utilizan la plataforma como actividad principal. Y alrededor de S/908 cuando es una actividad complementaria a otras.
+             </mark>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Por su parte, Alejandra Dinegro, directora del
+             <b>
+             </b>
+             Observatorio de Plataformas-Perú, afirma que el trabajo en plataformas digitales es una tendencia que sigue creciendo–sobre todo durante la pandemia, cuando funcionó como un seguro de desempleo– y se necesita un marco normativo que ayude a proteger al usuario y al repartidor. Además, comenta que en septiembre solicitaron al MTPE reactivar la Mesa de Trabajo y que ve voluntad del ministerio para regular en materia de seguridad y de no acoso.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Según un estudio realizado al inicio de la pandemia por el Observatorio, se recogió que los repartidores reclamaban una mayor cobertura del seguro de accidentes y acusaban mayores gastos de mantenimiento de sus motos por efectos de la crisis sanitaria.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" id="fusion-static-enter:image:620x0::B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/2zucXyTd_TDk5GxUeDz23SAjHQ0=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/y0rkGw-cuWba7jYNBkYUy3SzBdQ=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" media="(max-width: 639px)"/>
+              <img alt="Apps de delivery. (Foto: PedidosYa)" class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/CqqpoXDddxVya-DXTHbJTS3sc8A=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" id="fusion-static-exit:image:620x0::B3NSJPUGL5EO5FJY4ETEBEMHTQ.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Apps de delivery. (Foto: PedidosYa)
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             A mediados de julio, el Pleno del Congreso anterior aprobó un proyecto que busca crear un vínculo laboral entre los repartidores y las empresas. A la espera de la segunda votación, no prosperó. En agosto, la congresista Susel Paredes presentó el
+             <a href="https://elcomercio.pe/economia/peru/congreso-presentan-proyecto-de-ley-que-reconoce-beneficios-laborales-a-repartidores-por-aplicativo-delivery-nndc-noticia/#:~:text=La%20congresista%20del%20Grupo%20Parlamentario,por%20medio%20de%20plataformas%20digitales." itemprop="url" target="_blank">
+              Proyecto de Ley 018-2021
+             </a>
+             para reconocer beneficios laborales a los trabajadores de plataformas digitales de movilidad y
+             <b>
+              delivery
+             </b>
+             . Paredes comenta a
+             <b>
+             </b>
+             Día1 que ella considera que sí hay una relación laboral y se encuentra redactando el texto sustitutorio con los aportes para presentarlo a la Comisión de Trabajo. Aunque no hay una fecha específica para ello, confía en que obtendrá los votos necesarios.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Entre otros aspectos, el proyecto propone jornadas de máximo de 48 horas semanales, pago por horas extra, seguro de salud, colaboración con autoridades ante agresiones por parte de los usuarios.
+            </p>
+            <blockquote class="story-contents__blockquote">
+             <i>
+              <b>
+               Mira:
+              </b>
+             </i>
+             <a href="https://elcomercio.pe/economia/personal/9-consejos-para-evitar-fraudes-en-inversiones-por-internet-noticia/">
+              <i>
+               <u>
+                <b>
+                 9 consejos para evitar fraudes en inversiones por Internet
+                </b>
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             De otro lado, se encuentra el marco tributario. El ministro de Economía,
+             <a href="https://elcomercio.pe/noticias/pedro-francke/" itemprop="url" target="_blank">
+              Pedro Francke
+             </a>
+             , comentó el mes pasado que están evaluando un posible cobro de impuestos a plataformas digitales. Pese a que en el país se grava la renta por servicios digitales de empresas no domiciliadas en el país, al igual que el IGV, no existen mecanismos para su recaudación. Para Dupuy, esto no impactaría mucho en las ‘apps’ de
+             <b>
+              delivery
+             </b>
+             .
+            </p>
+            <h2 class="">
+             DATO
+            </h2>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             - El 53% de los socios repartidores que labora en el país son de nacionalidad venezolana. El 45% son peruanos y el 2% de otra procedencia, de acuerdo al reporte de IPE, para
+             <b>
+              ComexPerú
+             </b>
+             .
+            </p>
+            <h2 class="">
+             <mark class="hl_yellow">
+              VIDEO RECOMENDADO
+             </mark>
+            </h2>
+            <div class="jwplayer-lazy" data-hasads="1" data-playerid="jqJgjiEA" id="0rIejA60">
+             <div class="jwplayer-lazy-icon-play">
+             </div>
+             <div data-fusion-component="image:580x326::m/v2/media/0rIejA60/poster.jpg" id="fusion-static-enter:image:580x326::m/v2/media/0rIejA60/poster.jpg" style="display:none">
+             </div>
+             <img alt="¿Cuánto ha crecido el consumo de redes sociales durante la pandemia? - LPD" class="lazy" data-src="https://elcomercio.pe/resizer/2HrQ9eoESNPZLu__5umLhbRkgno=/580x326/smart/filters:format(jpeg):quality(75)/cdn.jwplayer.com/v2/media/0rIejA60/poster.jpg" decoding="async" id="image_0rIejA60" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2" style="width:100%"/>
+             <div data-fusion-component="image:580x326::m/v2/media/0rIejA60/poster.jpg" id="fusion-static-exit:image:580x326::m/v2/media/0rIejA60/poster.jpg" style="display:none">
+             </div>
+            </div>
+            <figcaption class="s-multimedia__caption">
+             Ante la caída global de Facebook, Instagram y WhatsApp hace dos semanas vale preguntarnos qué ha pasado con el consumo de redes sociales durante la pandemia en el Perú y por qué esta caída nos afectó tanto. Para empezar, de acuerdo a Comscore el 72% de las interacciones de los peruanos en redes sociales se da en Facebook y un 22% en Instagram.  Además, el consumo de redes sociales tuvo un crecimiento importante durante la crisis sanitaria, según un reporte de Kantar Insights.
+             <a href="">
+             </a>
+            </figcaption>
+            <h2 class="">
+             <mark class="hl_yellow">
+              TE PUEDE INTERESAR
+             </mark>
+            </h2>
+            <ul class="story-contents__paragraph-list">
+             <li>
+              <a href="https://elcomercio.pe/economia/poblacion-con-empleo-adecuado-en-lima-metropolitana-crecio-743-entre-mayo-y-julio-nndc-noticia/" itemprop="url">
+               <i>
+                <u>
+                 <b>
+                  Población con empleo adecuado en Lima Metropolitana creció 74,3% entre mayo y julio
+                 </b>
+                </u>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/economia/opinion/nuevo-gobierno-y-relaciones-laborales-por-german-lora-opinion-noticia/" itemprop="url">
+               <i>
+                <u>
+                 <b>
+                  Nuevo Gobierno y relaciones laborales, por Germán Lora
+                 </b>
+                </u>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/economia/peru/calidad-del-empleo-en-deterioro-que-situacion-revela-el-ultimo-reporte-en-lima-metropolitana-economia-peruana-trabajo-desempleo-noticia/" itemprop="url">
+               <i>
+                <u>
+                 <b>
+                  Calidad del empleo en deterioro: ¿qué situación revela el último reporte en Lima Metropolitana?
+                 </b>
+                </u>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/economia/empleo-formal-privado-bcr-trabajo-en-el-sector-privado-en-abril-supero-niveles-prepandemia-nndc-noticia/" itemprop="url">
+               <i>
+                <u>
+                 <b>
+                  BCR: Empleo formal privado en abril superó niveles prepandemia
+                 </b>
+                </u>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/economia/peru/empleo-en-peru-mas-de-940000-personas-perdieron-sus-empleos-formales-en-lima-metropolitana-en-primer-trimestre-del-2021-nndc-noticia/" itemprop="url">
+               <i>
+                <u>
+                 <b>
+                  Más de 940.000 personas perdieron sus empleos formales en Lima Metropolitana en primer trimestre del 2021
+                 </b>
+                </u>
+               </i>
+              </a>
+             </li>
+            </ul>
+           </section>
+          </p>
+          <blockquote>
+           Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.
+          </blockquote>
+          <!-- <ul>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
@@ -80,136 +837,407 @@
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                 </ul> -->
-                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                <h3>This is H3 Text Format</h3>
-                <h4>This is H4 Text Format</h4>
-                <h5>This is H5 Text Format</h5>
-                <h6>This is H6 Text Format</h6>
-                <a href="#" class="btn btn-primary">Primary</a> <a href="#" class="btn btn-success">Success</a> <a href="#" class="btn btn-info">Info</a> <a href="#" class="btn btn-danger">Danger</a> <a href="#" class="btn yellow_btn">Yellow</a> <a href="#" class="btn blue_btn">Blue</a> <a href="#">link</a>
-                <div class="singlepage_pagination"> <a class="previous_btn" href="#">Previous</a> <a class="next_btn" href="#">Next</a> </div>
-                <div class="social_area wow fadeInLeft">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-                  </ul>
-                </div>
-                <div class="author"> <a href="#"><img src="../../images/100x100.jpg" alt=""></a>
-                  <div class="author_details">
-                    <h3><a href="#">Author Name</a></h3>
-                    <p>About Author Content lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="similar_post_area">
-              <h2>Similar Post You May Like <i class="fa fa-thumbs-o-up"></i></h2>
-              <ul class="featured_nav similarpost_nav wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-              </ul>
-            </div>
+          <p>
+           Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.
+          </p>
+          <h3>
+           This is H3 Text Format
+          </h3>
+          <h4>
+           This is H4 Text Format
+          </h4>
+          <h5>
+           This is H5 Text Format
+          </h5>
+          <h6>
+           This is H6 Text Format
+          </h6>
+          <a class="btn btn-primary" href="#">
+           Primary
+          </a>
+          <a class="btn btn-success" href="#">
+           Success
+          </a>
+          <a class="btn btn-info" href="#">
+           Info
+          </a>
+          <a class="btn btn-danger" href="#">
+           Danger
+          </a>
+          <a class="btn yellow_btn" href="#">
+           Yellow
+          </a>
+          <a class="btn blue_btn" href="#">
+           Blue
+          </a>
+          <a href="#">
+           link
+          </a>
+          <div class="singlepage_pagination">
+           <a class="previous_btn" href="#">
+            Previous
+           </a>
+           <a class="next_btn" href="#">
+            Next
+           </a>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <div class="row">
-          <div class="middlebar_content">
-            <h2 class="yellow_bg">What's Hot</h2>
-            <div class="middlebar_content_inner">
-              <ul class="middlebar_nav wow fadeInDown">
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img2.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-              </ul>
-            </div>
-            <div class="popular_categori">
-              <h2 class="limeblue_bg">Most Popular Categories</h2>
-              <ul class="poplr_catgnva wow fadeInDown">
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Life & Style</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Sports</a></li>
-              </ul>
-            </div>
+          <div class="social_area wow fadeInLeft">
+           <ul>
+            <li>
+             <a href="#">
+              <span class="fa fa-facebook">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-twitter">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-google-plus">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-linkedin">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-pinterest">
+              </span>
+             </a>
+            </li>
+           </ul>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <div class="row">
-          <div class="rightbar_content">
-            <div class="single_blog_sidebar">
-              <h2>The Featured Stuff</h2>
-              <ul class="featured_nav wow fadeInDown">
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-              </ul>
-            </div>
-            <div class="single_blog_sidebar">
-              <h2>Popular Posts</h2>
-              <ul class="middlebar_nav wow fadeInDown">
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img2.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-              </ul>
-            </div>
-            <div class="single_blog_sidebar">
-              <h2>Popular Tags</h2>
-              <ul class="poplr_tagnav wow fadeInDown">
-                <li><a href="#">Arts</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Nature</a></li>
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Tourism</a></li>
-                <li><a href="#">Videos</a></li>
-              </ul>
-            </div>
+          <div class="author">
+           <a href="#">
+            <img alt="" src="../../images/100x100.jpg"/>
+           </a>
+           <div class="author_details">
+            <h3>
+             <a href="#">
+              Author Name
+             </a>
+            </h3>
+            <p>
+             About Author Content lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus
+            </p>
+           </div>
           </div>
+         </div>
         </div>
+        <div class="similar_post_area">
+         <h2>
+          Similar Post You May Like
+          <i class="fa fa-thumbs-o-up">
+          </i>
+         </h2>
+         <ul class="featured_nav similarpost_nav wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
       </div>
+     </div>
+     <div class="col-sm-6 col-md-2 col-lg-2">
+      <div class="row">
+       <div class="middlebar_content">
+        <h2 class="yellow_bg">
+         What's Hot
+        </h2>
+        <div class="middlebar_content_inner">
+         <ul class="middlebar_nav wow fadeInDown">
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img2.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="popular_categori">
+         <h2 class="limeblue_bg">
+          Most Popular Categories
+         </h2>
+         <ul class="poplr_catgnva wow fadeInDown">
+          <li>
+           <a href="#">
+            Business
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Gallery
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Life &amp; Style
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Games
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Slider
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Sports
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-md-4 col-lg-4">
+      <div class="row">
+       <div class="rightbar_content">
+        <div class="single_blog_sidebar">
+         <h2>
+          The Featured Stuff
+         </h2>
+         <ul class="featured_nav wow fadeInDown">
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+         </ul>
+        </div>
+        <div class="single_blog_sidebar">
+         <h2>
+          Popular Posts
+         </h2>
+         <ul class="middlebar_nav wow fadeInDown">
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img2.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="single_blog_sidebar">
+         <h2>
+          Popular Tags
+         </h2>
+         <ul class="poplr_tagnav wow fadeInDown">
+          <li>
+           <a href="#">
+            Arts
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Games
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Nature
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Comedy
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Sports
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Tourism
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Videos
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
     </div>
-  </div>
-</section>
-<footer id="footer">
-  <div class="container">
+   </div>
+  </section>
+  <footer id="footer">
+   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="footer_inner">
-          <p class="pull-left">Copyright &copy; 2014 ColorMag</p>
-          <p class="pull-right">Developed By WpFreeware</p>
-        </div>
+     <div class="col-md-12">
+      <div class="footer_inner">
+       <p class="pull-left">
+        Copyright © 2014 ColorMag
+       </p>
+       <p class="pull-right">
+        Developed By WpFreeware
+       </p>
       </div>
+     </div>
     </div>
-  </div>
-</footer>
-<script src="../../assets/js/jquery.min.js"></script> 
-<script src="../../assets/js/bootstrap.min.js"></script> 
-<script src="../../assets/js/wow.min.js"></script> 
-<script src="../../assets/js/custom.js"></script>
-</body>
+   </div>
+  </footer>
+  <script src="../../assets/js/jquery.min.js">
+  </script>
+  <script src="../../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../../assets/js/wow.min.js">
+  </script>
+  <script src="../../assets/js/custom.js">
+  </script>
+ </body>
 </html>

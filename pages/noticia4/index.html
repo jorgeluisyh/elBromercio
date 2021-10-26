@@ -1,78 +1,519 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<title>ColorMag | Single</title>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="../../assets/css/font.css">
-<link rel="stylesheet" href="../../assets/css/animate.css">
-<link rel="stylesheet" href="../../assets/css/structure.css">
-<!--[if lt IE 9]>
+ <head>
+  <title>
+   ColorMag | Single
+  </title>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link href="../../assets/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="../../assets/css/font.css" rel="stylesheet"/>
+  <link href="../../assets/css/animate.css" rel="stylesheet"/>
+  <link href="../../assets/css/structure.css" rel="stylesheet"/>
+  <!--[if lt IE 9]>
 <script src="../../assets/js/html5shiv.min.js"></script>
 <script src="../../assets/js/respond.min.js"></script>
 <![endif]-->
-</head>
-<body>
-<div id="preloader">
-  <div id="status">&nbsp;</div>
-</div>
-<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<header id="header">
-  <div class="container">
+ </head>
+ <body>
+  <div id="preloader">
+   <div id="status">
+   </div>
+  </div>
+  <a class="scrollToTop" href="#">
+   <i class="fa fa-angle-up">
+   </i>
+  </a>
+  <header id="header">
+   <div class="container">
     <nav class="navbar navbar-default" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="../../index.html"><span>Color</span>Mag</a> </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav custom_nav">
-            <li class=""><a href="../../index.html">Home</a></li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Jobs</a>
-              <ul class="dropdown-menu" role="menu">
-                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Jobs Home</a> </li>
-                <li><a href="#">Faq</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Article</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Features</a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Standard Blog Layout</a></li>
-                <li><a href="#">Post With Comments</a></li>
-                <li><a href="#">Page:Right Sidebar</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Shortcodes</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Download Template</a></li>
-          </ul>
-        </div>
+     <div class="container-fluid">
+      <div class="navbar-header">
+       <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+        <span class="sr-only">
+         Toggle navigation
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+        <span class="icon-bar">
+        </span>
+       </button>
+       <a class="navbar-brand" href="../../index.html">
+        <span>
+         Color
+        </span>
+        Mag
+       </a>
       </div>
+      <div class="navbar-collapse collapse" id="navbar">
+       <ul class="nav navbar-nav custom_nav">
+        <li class="">
+         <a href="../../index.html">
+          Home
+         </a>
+        </li>
+        <li class="dropdown">
+         <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+          Jobs
+         </a>
+         <ul class="dropdown-menu" role="menu">
+          <li class="dropdown">
+           <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+            Jobs Home
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Faq
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Home
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Article
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li class="dropdown">
+         <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+          Features
+         </a>
+         <ul class="dropdown-menu" role="menu">
+          <li>
+           <a href="#">
+            Standard Blog Layout
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Post With Comments
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Page:Right Sidebar
+           </a>
+          </li>
+         </ul>
+        </li>
+        <li>
+         <a href="#">
+          Shortcodes
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Archive
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Contact
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Download Template
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
     </nav>
     <form id="searchForm">
-      <input type="text" placeholder="Search...">
-      <input type="submit" value="">
+     <input placeholder="Search..." type="text"/>
+     <input type="submit" value=""/>
     </form>
-  </div>
-</header>
-<section id="contentbody">
-  <div class="container">
+   </div>
+  </header>
+  <section id="contentbody">
+   <div class="container">
     <div class="row">
-      <div class=" col-sm-12 col-md-6 col-lg-6">
-        <div class="row">
-          <div class="leftbar_content">
-            <h2>The New Stuff</h2>
-            <div class="singlepost_area">
-              <div class="singlepost_content"> <a href="#" class="stuff_category">Technology</a> <span class="stuff_date">Nov <strong>17</strong></span>
-                <h2><a href="#" id="titulo">Duis quis erat non nunc fringilla</a></h2>
-                <img class="img-center" src="../../images/img_4.jpg" alt="">
-                <p id="noticia">Quisque ligulas ipsum, euismod atras vulputate iltricies etri elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Pellentesque pellentesque tempor tellus eget hendrerit. Morbi id aliquam ligula. Aliquam id dui sem. Proin rhoncus consequat nisl, eu ornare mauris tincidunt vitae. Vestibulum sodales ante a purus volutpat euismod. Proin sodales quam nec ante sollicitudin lacinia. Ut egestas bibendum tempor. Morbi non nibh sit amet ligula blandit ullamcorper in nec risus. Pellentesque fringilla diam faucibus tortor bibendum vulputate. Etiam turpis urna, rhoncus et mattis ut, dapibus eu nunc. Nunc sed aliquet nisi. Nullam ut magna non lacus adipiscing volutpat. Aenean odio mauris, consectetur quis consequat quis, blandit a nunc. Sed orci erat, placerat ac interdum ut, suscipit eu augue. Nunc vitae mi tortor. Ut vel justo quis lectus elementum </p>
-                <blockquote>Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.</blockquote>
-                <!-- <ul>
+     <div class="col-sm-12 col-md-6 col-lg-6">
+      <div class="row">
+       <div class="leftbar_content">
+        <h2>
+         The New Stuff
+        </h2>
+        <div class="singlepost_area">
+         <div class="singlepost_content">
+          <a class="stuff_category" href="#">
+           LUCES
+          </a>
+          <span class="stuff_date">
+           Nov
+           <strong>
+            17
+           </strong>
+          </span>
+          <h2>
+           <a href="#" id="titulo">
+            Iván Ayón Rivas: conoce al joven tenor peruano que ganó el ‘Mundial de Ópera’
+           </a>
+          </h2>
+          <img alt="" class="img-center" src="../../images/img_4.jpg"/>
+          <p id="noticia">
+           <section>
+            <div class="story-content__stamp-trust">
+             <div class="story-content__stamp-trust__box-left">
+              <p>
+               Conforme a los criterios de
+              </p>
+              <a href="https://elcomercio.pe/buenas-practicas/#trust-project" rel="noreferrer" target="_blank">
+               <img alt="Trust Project" class="lazy" data-src="https://d1ts5g4ys243sh.cloudfront.net/proyectos_especiales_prod/especiales/banner-trust-project/logo-trust.png" height="26" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2" width="100%"/>
+              </a>
+             </div>
+             <a class="story-content__stamp-trust__link" href="https://elcomercio.pe/buenas-practicas/" rel="noreferrer" target="_blank">
+              Saber más
+             </a>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              Nos dice su maestra de canto que
+             </b>
+             <a href="https://elcomercio.pe/luces/musica/ivan-ayon-rivas-tenor-peruano-gana-el-primer-premio-del-concurso-de-canto-operalia-2021-peru-placido-domingo-noticia/" itemprop="url" target="_blank">
+              <b>
+               Iván Ayón Rivas
+              </b>
+             </a>
+             <b>
+              nació para cantar. La soprano María Eloisa Aguirre lo conoce casi desde los 18 años y fue su guía hasta los 21 años, cuando ganó el concurso de Radio Filarmonía. “
+             </b>
+             <i>
+              <b>
+               Ingresó al Conservatorio Nacional de Música en el primer puesto, a la especialidad de Canto. Fue un estudiante muy destacado. Y posteriormente ganó el concurso más importante de la lírica del país. Participó en la ópera peruana, ha sido reconocido por músicos nacionales y extranjeros. Él tenía que emigrar a otras latitudes con estas condiciones”
+              </b>
+             </i>
+             <b>
+              , nos dice María Eloisa, quien define a Iván Ayón Rivas como
+             </b>
+             <i>
+              <b>
+               “un jovencito muy encantador, amoroso, sencillo, que ama a nuestro país y a su Piura que lo vio nacer
+              </b>
+             </i>
+             <b>
+              ”.
+             </b>
+            </p>
+            <div class="content_gpt_caja3">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/luces/caja3" data-bloque="3" data-prebid-enabled="true" id="gpt_caja3">
+             </div>
+            </div>
+            <div id="spc_post_stories">
+            </div>
+            <blockquote class="story-contents__blockquote">
+             <b>
+              MIRA:
+             </b>
+             <a href="https://elcomercio.pe/luces/musica/ivan-ayon-rivas-tenor-peruano-gana-el-primer-premio-del-concurso-de-canto-operalia-2021-peru-placido-domingo-noticia/" target="_blank">
+              <i>
+               <u>
+                Iván Ayón-Rivas: Tenor peruano gana el primer premio del concurso de canto Operalia 2021
+               </u>
+              </i>
+             </a>
+            </blockquote>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El domingo último, Iván Ayón Rivas alcanzó el máximo galardón en el concurso de canto Operalia 2021, realizado entre el 18 y el 24 de octubre en el histórico
+             <a href="https://elcomercio.pe/noticias/teatro-bolshoi/" itemprop="url">
+              Teatro Bolshoi
+             </a>
+             de Moscú, Rusia. Se trata de una competencia mundial de ópera abierta a artistas de entre 18 y 32 años, fundada y presidida desde 1993 por el famoso lírico español
+             <a href="https://elcomercio.pe/noticias/placido-domingo/" itemprop="url">
+              <b>
+               Plácido Domingo
+              </b>
+             </a>
+             .
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::2XESBYF5SREDNKOJQCSMRLNLYY.jpg" id="fusion-static-enter:image:620x0::2XESBYF5SREDNKOJQCSMRLNLYY.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/agUc0gAEcUN6Dxk5VcRNhYIlUlk=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2XESBYF5SREDNKOJQCSMRLNLYY.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/pOueE3cn_FH50RUoPsIhbIsEmyM=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2XESBYF5SREDNKOJQCSMRLNLYY.jpg" media="(max-width: 639px)"/>
+              <img alt='Con Leo Nucci en "Rigoletto" en el teatro Massimo di Palermo. (Foto:  Tatiana Mazzola) ' class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/IvPA8AZnRpD2BvQqI5aOOxD8NpM=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/2XESBYF5SREDNKOJQCSMRLNLYY.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::2XESBYF5SREDNKOJQCSMRLNLYY.jpg" id="fusion-static-exit:image:620x0::2XESBYF5SREDNKOJQCSMRLNLYY.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Con Leo Nucci en "Rigoletto" en el teatro Massimo di Palermo. (Foto:  Tatiana Mazzola)
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             En este ‘mundial de ópera’, el tenor se llevó el premio a mejor cantante masculino por su interpretación de un fragmento de la ópera de Giuseppe Verdi “Il corsaro”. Además, Ayón Rivas ganó el
+             <b>
+              premio a la zarzuela y el premio del público
+             </b>
+             .
+            </p>
+            <div class="content_gpt_inline">
+             <div data-ads-dimensions="[[1,1]]" data-ads-dimensions-m="[[1,1]]" data-ads-name="/28253241/elcomercio/web/post/luces/inline" data-bloque="3" id="gpt_inline">
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Iván, que ganó en 2015 el trofeo Luciano Pavarotti en el concurso Premio Etta e Paolo Limiti y recibió en 2018 una distinción del Congreso de la República, es reconocido así por su maestra: “
+             <i>
+              Es un profesional excelente, muy estudioso, pulcro, un músico que maneja otros instrumentos como la guitarra, trompeta, piano, etcétera. Invierte horas diarias en su preparación física, técnica, vocal e intelectual. Porque no solo es tener el don maravilloso del canto, sino también cultivarlo y luchar mucho para lograr un sueño en la vida
+             </i>
+             ”. Y Iván Ayón Rivas lo está logrando.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Tras conocerse la noticia de su triunfo en Moscú, y entre su vuelo de Rusia a Italia (él reside en Rapallo, provincia de Génova), el tenor aceptó responder a
+             <b>
+              El Comercio
+             </b>
+             algunas preguntas. Gran admirador de Franco Corelli, Giuseppe Giacomini, Plácido Domingo y a su maestro de canto, el barítono italiano Roberto Servile, Iván nos indica que es la primera vez que aplicaba a Operalia, y gracias a su destacada participación,
+             <b>
+              él se convierte también en el primer peruano en ganar esta competencia
+             </b>
+             . Hoy, que es Día Mundial de la Ópera, él y todo el Perú celebra.
+            </p>
+            <div class="content_gpt_caja4">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/luces/caja4" data-bloque="3" data-prebid-enabled="true" id="gpt_caja4">
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              Desde su creación en 1993, es la primera vez que un peruano gana la competencia mundial de ópera Operalia. ¿Cómo te sientes?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Me siento muy feliz de poder ser el primer peruano en ganar este importante concurso, especialmente de ser el único representante latinoamericano de esta edición.
+            </p>
+            <div class="lyt-container-wrapper">
+             <div class="lyt-container">
+              <div class="lyt-player lyt-lazy" id="lyt-hdBD-KT7FNg">
+               <picture class="lyt-pic">
+                <source data-srcset="https://i.ytimg.com/vi_webp/hdBD-KT7FNg/hqdefault.webp" type="image/webp"/>
+                <img alt="" class="lyt-img lazy" data-src="https://i.ytimg.com/vi/hdBD-KT7FNg/hqdefault.jpg" type="image/jpeg"/>
+               </picture>
+               <button class="lty-playbtn" type="button">
+               </button>
+              </div>
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –¿Cómo te preparaste para esta competencia, y qué fue lo más difícil a lo largo de estas etapas de selección hasta llegar a la final?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             La preparación no ha sido para esta competencia, nosotros (mi maestro Roberto Servile y yo) nos preparamos para los nuevos debuts en los teatros importantes donde tengo que regresar y/o ir por primera vez, el concurso es una consecuencia de hacer bien las cosas y es una confirmación de que estoy por buen camino. Desde la preliminar hasta la final fue un camino difícil, más que todo para gestionar los nervios y la concentración.
+            </p>
+            <div class="content_gpt_caja5">
+             <div data-ads-dimensions-m="[[300, 100], [320, 50], [300, 50], [320, 100], [300, 250]]" data-ads-name="/28253241/elcomercio/web/post/luces/caja5" data-bloque="4" data-prebid-enabled="true" id="gpt_caja5">
+             </div>
+            </div>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –¿Qué es lo mejor que te llevas de este ‘mundial de ópera’?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Lo mejor que me llevo de Operalia son las relaciones humanas, el poder compartir con cantantes de gran nivel y poder aprender de ellos (y del maestro Domingo obviamente) algo que me pueda servir para la vida cotidiana y la carrera.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –Cuéntanos de tus inicios. ¿Cómo surge tu interés por la ópera y cómo inicias el desarrollo de tu carrera artística?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El interés por la ópera nació de una manera muy ligera, fue una opción para poder entrar al mundo de la música, pero no la conocí del todo hasta entrar al Conservatorio Nacional de Música; fue ahí donde al lado de mi querida maestra María Eloisa Aguirre, comenzamos un
+             <i>
+              percorso
+             </i>
+             de estudio, siempre apuntando a lo internacional.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –La crítica ha celebrado tu “entusiasmo y generosidad vocal” cuando interpretaste a Corrado en “El corsario” (Piacenza, 2018). Cuando un joven tenor como tú sale a escena, además de la voz, claro, ¿a qué otros recursos apela para conquistar a su público?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Los recursos, en realidad es uno solo: la
+             <i>
+              tecnica
+             </i>
+             . Sin ella no sería capaz de aprovechar las emociones mías y del autor y transmitirlas al público.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" id="fusion-static-enter:image:620x0::TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/RqgL3z48d1KZC2nVxbvhmv_q9ic=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/KocG1nmNilhGlzXXqaXhTeYKZ_w=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" media="(max-width: 639px)"/>
+              <img alt='En "La Traviata", de Giuseppe Verdi, en el Macerata Opera Festival, Sferisterio di Macerata. (Foto: Tatiana Mazzola)  ' class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/Xt3LlJ1b2e2UOgs0QAa9uMSseDo=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" id="fusion-static-exit:image:620x0::TW64OXPX7VHOTJXUFRLCVSSGSI.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              En "La Traviata", de Giuseppe Verdi, en el Macerata Opera Festival, Sferisterio di Macerata. (Foto: Tatiana Mazzola)
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –¿Cuál consideras que ha sido hasta ahora tu más retadora presentación o personaje? ¿Por qué?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Absolutamente ninguna, depende todo de la capacidad de control que tenga en cada presentación. Hasta ahora he tenido la fortuna de controlar las emociones y poder conquistar la función o la producción en general.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –El Teatro Bolshoi debe ser intimidante, por su historia y lo imponente que es. Pero te has presentado también en el Teatro Dell’Opera de Roma, de La Fenice y el Regio di Torini, estos dos últimos inaugurados en el siglo XVIII. ¿Cómo recuerdas tu debut en esas salas?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             En realidad he cantado en el Bolshoi dos años atrás haciendo “La bohéme”. Más que intimidantes, son impresionantes, sentir la emoción y la responsabilidad de cantar en esos grandes escenarios, sabiendo que por ahí han pasado los mejores de la historia es un gran peso y un entusiasmo a seguir estudiando y trabajando.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –Y ahora has vuelto a Milán. Próximamente serás el príncipe Malcolm, que lucha por recuperar el trono de su padre en “Macbeth”. Cuéntanos sobre tu preparación para asumir este papel en (nada menos que) el Teatro alla Scala de Milán. ¿Es tu debut en esa sala?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Ha sido una preparación complicada pero fácil al mismo tiempo, porque el rol no es tan grande, pero la responsabilidad de estar en el Teatro alla Scala es grandísima. Es mi debut, que en realidad tenía que ser el año pasado justo para el 7 de diciembre, que pero causa Covid no pudo realizarse.
+            </p>
+            <figure>
+             <div data-fusion-component="image:620x0::Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" id="fusion-static-enter:image:620x0::Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" style="display:none">
+             </div>
+             <picture>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/WPo9W2X7r5-kAkpZPrTndhx70w0=/280x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" media="(max-width: 360px)"/>
+              <source class="lazy" data-srcset="https://elcomercio.pe/resizer/fOVCEajkWLbbpdAyi331sXqvaIg=/482x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" media="(max-width: 639px)"/>
+              <img alt="Iván Ayón Rivas (centro) es el primer peruano en ganar el prestigioso concurso de canto Operalia. Este año también fue el único representante latinoamericano en la competencia. (Foto: P.Rychkov / Teatro Bolshoi /Difusión)" class="lazy story-contents__image w-full o-cover" data-src="https://elcomercio.pe/resizer/GuAtgxItvNc6fNuA4he2SAmtRG8=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" decoding="async" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2"/>
+             </picture>
+             <div data-fusion-component="image:620x0::Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" id="fusion-static-exit:image:620x0::Z2PBCBPNWVD3BCH6B4EWJ6PK7I.jpg" style="display:none">
+             </div>
+             <figcaption class="story-contents__caption">
+              Iván Ayón Rivas (centro) es el primer peruano en ganar el prestigioso concurso de canto Operalia. Este año también fue el único representante latinoamericano en la competencia. (Foto: P.Rychkov / Teatro Bolshoi /Difusión)
+              <!-- -->
+             </figcaption>
+            </figure>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –Como sucedió en muchos sectores, la pandemia generó situaciones muy difíciles para la industria cultural. ¿Qué ocurrió en el campo de la lírica y cómo enfrentaste tú los meses de confinamiento?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             El COVID golpeó muy fuerte el sector teatral, porque lamentablemente el teatro lírico lo dejaron como última rueda del carro y pues fue muy difícil poder conseguir que abrieran todo otra vez. El confinamiento lo pasé genial, pues mis padres ahora viven conmigo y tuve la oportunidad de poder conocernos mejor en otra etapa de nuestras vidas.
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –Y ahora, ¿cómo se vive la nueva normalidad en la ópera nacional y global?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Ahora, gracias al ‘GreenPass’ y a las diferentes vacunas, todo está siguiendo su
+             <i>
+              percorso natural.
+             </i>
+             En Italia los teatros están abiertos al 100% de su capacidad y se piensa que en futuro no cerrarán nada. Al máximo se reduce al 80%, pero no creo, ¡tengamos fe!
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <b>
+              –¿Qué expectativas tienes a partir de este reconocimiento alcanzado el domingo? ¿Cuáles son tus planes a futuro?
+             </b>
+            </p>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             Las expectativas son grandes, alcanzar los más grandes teatros del mundo, sin dejar de estudiar y perfeccionar aún más la técnica. Este reconocimiento es un peso muy grande, puesto qué ahora la gente ni irá a escuchar sólo la ópera, si no al ganador de Operalia. Es una gran responsabilidad.
+            </p>
+            <h2 class="">
+             <mark class="hl_yellow">
+              <b>
+               VIDEO RECOMENDADO
+              </b>
+             </mark>
+            </h2>
+            <div class="jwplayer-lazy" data-hasads="1" data-playerid="jqJgjiEA" id="5Vr9AnQO">
+             <div class="jwplayer-lazy-icon-play">
+             </div>
+             <div data-fusion-component="image:580x326::m/v2/media/5Vr9AnQO/poster.jpg" id="fusion-static-enter:image:580x326::m/v2/media/5Vr9AnQO/poster.jpg" style="display:none">
+             </div>
+             <img alt='Los cantautores Marco Romero y Renata Flores mezclan lo criollo con lo urbano en "Mi lugar bendito".' class="lazy" data-src="https://elcomercio.pe/resizer/frKqoI1Js7yGH_AxBtp_7TfXR5M=/580x326/smart/filters:format(jpeg):quality(75)/cdn.jwplayer.com/v2/media/5Vr9AnQO/poster.jpg" decoding="async" id="image_5Vr9AnQO" src="https://cdna.elcomercio.pe/resources/dist/elcomercio/images/default-md.png?d=2" style="width:100%"/>
+             <div data-fusion-component="image:580x326::m/v2/media/5Vr9AnQO/poster.jpg" id="fusion-static-exit:image:580x326::m/v2/media/5Vr9AnQO/poster.jpg" style="display:none">
+             </div>
+            </div>
+            <figcaption class="s-multimedia__caption">
+             Marco Romero y Renata Flores fusionan sonidos autóctonos con ritmos electrónicos y urbanos en “Mi lugar bendito”, tema que tiene como principal fin despertar el interés de la juventud por la música peruana
+             <a href="">
+             </a>
+            </figcaption>
+            <h2 class="">
+             <mark class="hl_yellow">
+              <b>
+               TE PUEDE INTERESAR
+              </b>
+             </mark>
+            </h2>
+            <ul class="story-contents__paragraph-list">
+             <li>
+              <a href="https://elcomercio.pe/tvmas/famosos/ed-sheeran-tiene-coronavirus-a-puertas-de-lanzar-su-nuevo-disco-equals-covid-19-celebs-nndc-noticia/" itemprop="url">
+               <i>
+                <b>
+                 Ed Sheeran da positivo a COVID-19
+                </b>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/luces/musica/corazon-serrano-en-busca-de-voz-masculina-y-anuncia-gira-europea-farandula-nndc-noticia/" itemprop="url">
+               <i>
+                <b>
+                 “Corazón Serrano” en busca de voz masculina y anuncia gira europea
+                </b>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/luces/musica/dia-de-la-cancion-criolla-conversatorio-reunira-legendarios-representantes-de-la-musica-peruana-noticia/" itemprop="url">
+               <i>
+                <b>
+                 Día de la canción criolla: conversatorio reunirá legendarios representantes de la música peruana
+                </b>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/luces/musica/marco-romero-lanza-feat-con-renata-flores-la-musica-criolla-no-esta-ajena-a-fusionarse-con-lo-urbano-sin-perder-su-esencia-musica-criolla-noticia/" itemprop="url">
+               <i>
+                <b>
+                 ¿Música criolla con género urbano? Este es el nuevo tema de Marco Romero y Renata Flores | VIDEO
+                </b>
+               </i>
+              </a>
+             </li>
+             <li>
+              <a href="https://elcomercio.pe/luces/musica/caribenos-de-guadalupe-santiago-aspericueta-revela-que-primer-show-en-lima-fue-como-teloneros-de-agua-marina-y-cuenta-que-el-dia-del-accidente-se-le-presento-la-virgen-de-guadalupe-cumbia-noticia/" itemprop="url">
+               <i>
+                <b>
+                 Caribeños de Guadalupe: líder del grupo revela que primer show en Lima fue como teloneros de Agua Marina
+                </b>
+               </i>
+              </a>
+             </li>
+            </ul>
+            <p class="story-contents__font-paragraph" itemprop="description">
+             <br/>
+            </p>
+           </section>
+          </p>
+          <blockquote>
+           Donec volutpat nibh sit amet libero ornare non laoreet arcu luctus. Donec id arcu quis mauris euismod placerat sit amet ut metus. Sed imperdiet fringilla sem eget euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque adipiscing, neque ut pulvinar tincidunt, est sem euismod odio, eu ullamcorper turpis nisl sit amet velit. Nullam vitae nibh odio, non scelerisque nibh. Vestibulum ut est augue, in varius purus.
+          </blockquote>
+          <!-- <ul>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
@@ -80,136 +521,407 @@
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                   <li>Nunc tincidunt, elit non cursus euismod, lacus augue</li>
                 </ul> -->
-                <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.</p>
-                <h3>This is H3 Text Format</h3>
-                <h4>This is H4 Text Format</h4>
-                <h5>This is H5 Text Format</h5>
-                <h6>This is H6 Text Format</h6>
-                <a href="#" class="btn btn-primary">Primary</a> <a href="#" class="btn btn-success">Success</a> <a href="#" class="btn btn-info">Info</a> <a href="#" class="btn btn-danger">Danger</a> <a href="#" class="btn yellow_btn">Yellow</a> <a href="#" class="btn blue_btn">Blue</a> <a href="#">link</a>
-                <div class="singlepage_pagination"> <a class="previous_btn" href="#">Previous</a> <a class="next_btn" href="#">Next</a> </div>
-                <div class="social_area wow fadeInLeft">
-                  <ul>
-                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
-                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                    <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
-                  </ul>
-                </div>
-                <div class="author"> <a href="#"><img src="../../images/100x100.jpg" alt=""></a>
-                  <div class="author_details">
-                    <h3><a href="#">Author Name</a></h3>
-                    <p>About Author Content lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="similar_post_area">
-              <h2>Similar Post You May Like <i class="fa fa-thumbs-o-up"></i></h2>
-              <ul class="featured_nav similarpost_nav wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a href="#" class="featured_img"><img alt="" src="../../images/featured_img1.jpg"></a>
-                  <div class="featured_title"> <a href="#" class="">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-              </ul>
-            </div>
+          <p>
+           Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a pharetra urna. Morbi dui lectus, pharetra nec elementum eget, vulputate ut nisi. Aliquam accumsan, nulla sed feugiat vehicula, lacus justo semper libero, quis porttitor turpis odio sit amet ligula. Duis dapibus fermentum orci, nec malesuada libero vehicula ut. Integer sodales, urna eget interdum eleifend, nulla nibh laoreet nisl, quis dignissim mauris dolor eget mi. Donec at mauris enim. Duis nisi tellus, adipiscing a convallis quis, tristique vitae risus. Nullam molestie gravida lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus.
+          </p>
+          <h3>
+           This is H3 Text Format
+          </h3>
+          <h4>
+           This is H4 Text Format
+          </h4>
+          <h5>
+           This is H5 Text Format
+          </h5>
+          <h6>
+           This is H6 Text Format
+          </h6>
+          <a class="btn btn-primary" href="#">
+           Primary
+          </a>
+          <a class="btn btn-success" href="#">
+           Success
+          </a>
+          <a class="btn btn-info" href="#">
+           Info
+          </a>
+          <a class="btn btn-danger" href="#">
+           Danger
+          </a>
+          <a class="btn yellow_btn" href="#">
+           Yellow
+          </a>
+          <a class="btn blue_btn" href="#">
+           Blue
+          </a>
+          <a href="#">
+           link
+          </a>
+          <div class="singlepage_pagination">
+           <a class="previous_btn" href="#">
+            Previous
+           </a>
+           <a class="next_btn" href="#">
+            Next
+           </a>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-2 col-lg-2">
-        <div class="row">
-          <div class="middlebar_content">
-            <h2 class="yellow_bg">What's Hot</h2>
-            <div class="middlebar_content_inner">
-              <ul class="middlebar_nav wow fadeInDown">
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img2.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a class="mbar_thubnail" href="#"><img src="../../images/hot_img1.jpg" alt=""></a> <a class="mbar_title" href="#">Sed luctus semper odio aliquam rhoncus</a> </li>
-              </ul>
-            </div>
-            <div class="popular_categori">
-              <h2 class="limeblue_bg">Most Popular Categories</h2>
-              <ul class="poplr_catgnva wow fadeInDown">
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Life & Style</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Slider</a></li>
-                <li><a href="#">Sports</a></li>
-              </ul>
-            </div>
+          <div class="social_area wow fadeInLeft">
+           <ul>
+            <li>
+             <a href="#">
+              <span class="fa fa-facebook">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-twitter">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-google-plus">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-linkedin">
+              </span>
+             </a>
+            </li>
+            <li>
+             <a href="#">
+              <span class="fa fa-pinterest">
+              </span>
+             </a>
+            </li>
+           </ul>
           </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <div class="row">
-          <div class="rightbar_content">
-            <div class="single_blog_sidebar">
-              <h2>The Featured Stuff</h2>
-              <ul class="featured_nav wow fadeInDown">
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-                <li> <a class="featured_img" href="#"><img src="../../images/featured_img1.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="#">Sed luctus semper odio aliquam rhoncus</a> </div>
-                </li>
-              </ul>
-            </div>
-            <div class="single_blog_sidebar">
-              <h2>Popular Posts</h2>
-              <ul class="middlebar_nav wow fadeInDown">
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img2.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-                <li> <a href="#" class="mbar_thubnail"><img alt="" src="../../images/hot_img1.jpg"></a> <a href="#" class="mbar_title">Sed luctus semper odio aliquam rhoncus</a> </li>
-              </ul>
-            </div>
-            <div class="single_blog_sidebar">
-              <h2>Popular Tags</h2>
-              <ul class="poplr_tagnav wow fadeInDown">
-                <li><a href="#">Arts</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Nature</a></li>
-                <li><a href="#">Comedy</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Tourism</a></li>
-                <li><a href="#">Videos</a></li>
-              </ul>
-            </div>
+          <div class="author">
+           <a href="#">
+            <img alt="" src="../../images/100x100.jpg"/>
+           </a>
+           <div class="author_details">
+            <h3>
+             <a href="#">
+              Author Name
+             </a>
+            </h3>
+            <p>
+             About Author Content lobortis. Proin ut nibh quis felis auctor ornare. Cras ultricies, nibh at mollis faucibus, justo eros porttitor mi, quis auctor lectus arcu sit amet nunc. Vivamus gravida vehicula arcu, vitae vulputate augue lacinia faucibus
+            </p>
+           </div>
           </div>
+         </div>
         </div>
+        <div class="similar_post_area">
+         <h2>
+          Similar Post You May Like
+          <i class="fa fa-thumbs-o-up">
+          </i>
+         </h2>
+         <ul class="featured_nav similarpost_nav wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+         </ul>
+        </div>
+       </div>
       </div>
+     </div>
+     <div class="col-sm-6 col-md-2 col-lg-2">
+      <div class="row">
+       <div class="middlebar_content">
+        <h2 class="yellow_bg">
+         What's Hot
+        </h2>
+        <div class="middlebar_content_inner">
+         <ul class="middlebar_nav wow fadeInDown">
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img2.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="popular_categori">
+         <h2 class="limeblue_bg">
+          Most Popular Categories
+         </h2>
+         <ul class="poplr_catgnva wow fadeInDown">
+          <li>
+           <a href="#">
+            Business
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Gallery
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Life &amp; Style
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Games
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Slider
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Sports
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="col-sm-6 col-md-4 col-lg-4">
+      <div class="row">
+       <div class="rightbar_content">
+        <div class="single_blog_sidebar">
+         <h2>
+          The Featured Stuff
+         </h2>
+         <ul class="featured_nav wow fadeInDown">
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+          <li>
+           <a class="featured_img" href="#">
+            <img alt="" src="../../images/featured_img1.jpg"/>
+           </a>
+           <div class="featured_title">
+            <a class="" href="#">
+             Sed luctus semper odio aliquam rhoncus
+            </a>
+           </div>
+          </li>
+         </ul>
+        </div>
+        <div class="single_blog_sidebar">
+         <h2>
+          Popular Posts
+         </h2>
+         <ul class="middlebar_nav wow fadeInDown">
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img2.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+          <li>
+           <a class="mbar_thubnail" href="#">
+            <img alt="" src="../../images/hot_img1.jpg"/>
+           </a>
+           <a class="mbar_title" href="#">
+            Sed luctus semper odio aliquam rhoncus
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="single_blog_sidebar">
+         <h2>
+          Popular Tags
+         </h2>
+         <ul class="poplr_tagnav wow fadeInDown">
+          <li>
+           <a href="#">
+            Arts
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Games
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Nature
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Comedy
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Sports
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Tourism
+           </a>
+          </li>
+          <li>
+           <a href="#">
+            Videos
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
     </div>
-  </div>
-</section>
-<footer id="footer">
-  <div class="container">
+   </div>
+  </section>
+  <footer id="footer">
+   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="footer_inner">
-          <p class="pull-left">Copyright &copy; 2014 ColorMag</p>
-          <p class="pull-right">Developed By WpFreeware</p>
-        </div>
+     <div class="col-md-12">
+      <div class="footer_inner">
+       <p class="pull-left">
+        Copyright © 2014 ColorMag
+       </p>
+       <p class="pull-right">
+        Developed By WpFreeware
+       </p>
       </div>
+     </div>
     </div>
-  </div>
-</footer>
-<script src="../../assets/js/jquery.min.js"></script> 
-<script src="../../assets/js/bootstrap.min.js"></script> 
-<script src="../../assets/js/wow.min.js"></script> 
-<script src="../../assets/js/custom.js"></script>
-</body>
+   </div>
+  </footer>
+  <script src="../../assets/js/jquery.min.js">
+  </script>
+  <script src="../../assets/js/bootstrap.min.js">
+  </script>
+  <script src="../../assets/js/wow.min.js">
+  </script>
+  <script src="../../assets/js/custom.js">
+  </script>
+ </body>
 </html>
